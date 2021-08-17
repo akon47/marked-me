@@ -65,15 +65,21 @@ export default defineComponent({
 </script>
 
 <style>
+code {
+  font-family: "mono-space";
+}
+
 .markdown-container {
   background: transparent;
   min-width: 320px;
   max-width: 768px;
   width: 100%;
   padding: 10px;
+  line-height: 1.5;
 
   --main-color: #37352f;
   --border-color: #dbdddf;
+  --code-background-color: #1b1f232f;
 
   color: var(--main-color);
 }
@@ -82,6 +88,7 @@ export default defineComponent({
 h2 {
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.3em;
+  line-height: 1.25;
 }
 
 .markdown-container hr {
@@ -90,5 +97,13 @@ h2 {
   padding: 0;
   border: 0;
   height: 3px;
+}
+
+.markdown-container code {
+  background-color: var(--code-background-color);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: 1px 6px;
 }
 </style>
