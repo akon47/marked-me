@@ -5,11 +5,12 @@ const markedOptions = {
   gfm: true,
   headerIds: false,
   tables: true,
-  breaks: true,
+  breaks: false,
   pedantic: false,
-  sanitize: true,
+  sanitize: false,
   smartLists: true,
   smartypants: false,
+  xhtml: true,
 } as marked.MarkedOptions;
 
 export function toHtml(markdownText: string): string {

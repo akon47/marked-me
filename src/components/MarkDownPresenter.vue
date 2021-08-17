@@ -70,6 +70,7 @@ export default defineComponent({
   min-width: 320px;
   max-width: 768px;
   width: 100%;
+  padding: 10px;
 
   --main-color: #37352f;
   --border-color: #dbdddf;
