@@ -11,14 +11,14 @@
 }
 
 #app > .header {
-  flex-basis: 50px;
+  flex-basis: 200px;
   flex-grow: 0;
   flex-shrink: 0;
   background: #F7F6F3;
 }
 
 #app > .footer {
-  flex-basis: 50px;
+  flex-basis: 25px;
   flex-grow: 0;
   flex-shrink: 0;
   background: #F7F6F3;
