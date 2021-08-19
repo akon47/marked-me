@@ -16,6 +16,7 @@ export default {};
   background-repeat: no-repeat;
   background-size: 1000% 100%;
   animation: Gradient 60s ease infinite;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
