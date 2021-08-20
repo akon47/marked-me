@@ -41,4 +41,12 @@ export default {};
   font-weight: bold;
   font-size: 40pt;
 }
+
+@media screen and (max-height: 850px) {
+  .header-background .title {
+    color: white;
+    font-weight: bold;
+    font-size: 25pt;
+  }
+}
 </style>

@@ -83,22 +83,6 @@ code {
   color: var(--main-color);
 }
 
-/* @media screen and (max-width: 768px) {
-  .markdown-container {
-    background: transparent;
-    min-width: 320px;
-    max-width: 768px;
-    width: 100%;
-    line-height: 1.5;
-
-    --main-color: #37352f;
-    --border-color: #dbdddf;
-    --code-background-color: #1b1f232f;
-
-    color: var(--main-color);
-  }
-} */
-
 .markdown-container h1,
 h2 {
   border-bottom: 1px solid var(--border-color);

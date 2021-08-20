@@ -21,7 +21,14 @@
   flex-basis: 25px;
   flex-grow: 0;
   flex-shrink: 0;
-  background: #F7F6F3;
+}
+
+@media screen and (max-height: 850px) {
+    #app > .header {
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
 }
 
 #app > .content {
