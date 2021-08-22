@@ -1,6 +1,6 @@
 <template>
   <div class="header-background">
-    <div class="title">kimhwan.kr</div>
+    <div class="title"></div>
   </div>
 </template>
 
