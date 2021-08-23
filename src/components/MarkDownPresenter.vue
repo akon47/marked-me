@@ -5,6 +5,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { toHtml } from "@/api/markdown-parser";
+import { cachingFetch } from "@/utils/caching-fetch";
 
 export default defineComponent({
   components: {},
@@ -44,8 +45,7 @@ export default defineComponent({
       this.isLoading = true;
       try {
         if (this.validURL(this.markdownText)) {
-          const response = await fetch(this.markdownText);
-          this.htmlText = toHtml(await response.text());
+          this.htmlText = toHtml(await cachingFetch(this.markdownText));
         } else {
           this.htmlText = toHtml(this.markdownText);
         }
