@@ -1,6 +1,11 @@
 <template>
   <div class="header-background">
     <div class="title"></div>
+    <div class="nav">
+      <a href="https://stats.uptimerobot.com/2owrXSVNLl" target="_blank"
+        >Server Status</a
+      >
+    </div>
   </div>
 </template>
 
@@ -22,6 +27,22 @@ export default {};
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.nav {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+
+.nav a {
+  margin: 3px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  background-color: #000000a0;
+  border-radius: 5px;
+  padding: 2px 8px;
 }
 
 @keyframes Gradient {
