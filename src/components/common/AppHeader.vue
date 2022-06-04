@@ -1,7 +1,11 @@
 <template>
   <div class="header-background">
     <div class="title"></div>
-    <div class="nav">
+    <div class="router-nav">
+      <router-link to="/home">Home</router-link>
+      <router-link to="/server-info">ServerInfo</router-link>
+    </div>
+    <div class="link-nav">
       <a href="https://stats.uptimerobot.com/2owrXSVNLl" target="_blank"
         >Server Status</a
       >
@@ -29,13 +33,13 @@ export default {};
   align-items: center;
 }
 
-.nav {
+.router-nav {
   position: absolute;
   left: 5px;
   top: 10px;
 }
 
-.nav a {
+.router-nav a {
   margin: 3px;
   cursor: pointer;
   color: white;
@@ -43,6 +47,31 @@ export default {};
   background-color: #000000a0;
   border-radius: 5px;
   padding: 2px 8px;
+}
+
+.router-nav a.router-link-exact-active {
+  color: white;
+  font-weight: bold;
+}
+
+.link-nav {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+
+.link-nav a {
+  margin: 3px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  background-color: #000000a0;
+  border-radius: 5px;
+  padding: 2px 8px;
+}
+
+.link-nav a:hover {
+  text-decoration: underline;
 }
 
 @keyframes Gradient {

@@ -1,23 +1,14 @@
 <template>
   <div class="content-container">
-    <mark-down-presenter :markdownText="markdownText"></mark-down-presenter>
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import MarkDownPresenter from "../MarkDownPresenter.vue";
 
 export default defineComponent({
-  components: {
-    MarkDownPresenter,
-  },
   name: "AppContent",
-  computed: {
-    markdownText() {
-      return "https://raw.githubusercontent.com/akon47/akon47/master/resume.md";
-    },
-  },
 });
 </script>
 
